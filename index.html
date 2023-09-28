@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mental health and Digital well being</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+<style>
+  
+  
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #24262b;
+  color: #fff;
+}
+
+.nav-links a {
+  color: #fff;
+}
+
+/* LOGO */
+.logo {
+  font-size: 32px;
+  font-family: cursive;
+  border-radius: 50%;
+}
+
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li:hover {
+  background-color: #4c9e9e;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.services {
+  position: relative; 
+}
+
+.dropdown {
+  background-color: rgb(1, 139, 139);
+  padding: 1em 0;
+  position: absolute; 
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: #4c9e9e;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.footer{
+	background-color: #24262b;
+    padding: 40px 0;
+}
+.footer-col{
+   width: 20%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+.container {
+  position: relative;
+}
+
+/* Bottom right text */
+.image-container {
+            position: relative;
+            max-width: 100%;
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            transform: translate(-20%, -50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #ffffff;
+            padding: 50px;
+            font-size: 10px;
+            text-align: center;
+           
+            
+        }
+/* Apply basic table styles */
+
+
+
+
+</style>
+<body >
+    <nav class="navbar">
+        <!-- LOGO -->
+
+        
+        <div class="logo">
+            <img src="https://img.freepik.com/free-vector/gradient-mental-health-logo_23-2148820803.jpg?w=2000" alt="Avatar" width="100.5" height="80.5" style="border-radius: 50%;">                  
+
+        </div>
+
+        <div class="heading"><h4 style="color:aquamarine; font-family: Lucida Calligraphy; font-size: 50px; ">Digital Refresh</h4></div>
+    
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+    
+         
+    
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+    
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+    
+            
+            <li><a href="#contact">Contact</a></li>
+          </div>
+        </ul>
+      </nav>
+
+     
+
+      <img src="https://meetzipongo-dev.com/wp-content/uploads/2017/10/6_wellness_quote-1024x576.jpg"  class="responsive" style="opacity: 0.5;  width: 100%;
+      height: auto;" style = "position:absolute; top:0; left:0; width:100%; padding-top:13.5%; text-align:center; font-weight:bold; font-size:5vw; color:white; font-family:arial;" >
+
+      <br><br>
+      <section>
+
+    <h1 style="color: purple; font-family:Lucida Calligraphy; font-size: 40px;">Mental Health And Well Being ---></h1><br>
+    
+      <br>
+      <p style="color: #24262b; font-family:Lucida Calligraphy; font-size: 28px;">Mental health and well-being are comprehensive states that encompass an individual's emotional, 
+	psychological, and social health. These intertwined concepts reflect one's ability to navigate life's challenges, cultivate positive relationships, and maintain a sense of 
+	equilibrium and satisfaction.</p>
+
+	<br><br><p style="color: #24262b; font-family:Lucida Calligraphy; font-size: 28px;">Mental health encompasses emotional balance, which means understanding, expressing, and
+	 managing emotions in constructive ways. It involves psychological resilience, including traits like self-confidence and self-awareness.</p>
+
+	<br><br><p style="color: #24262b; font-family:Lucida Calligraphy; font-size: 28px;">Well-being, on the other hand, encompasses a broader spectrum. It includes physical health,
+	 involving regular exercise, balanced nutrition, adequate sleep, and overall vitality. Emotional well-being is another dimension, entailing the ability to experience a full
+	 range of emotions while having the skills to manage and regulate them constructively.</p>
+</section>
+    <br>
+
+      <font align = "center" size = "6" face = "Brush Script MT">
+		<h1 style = "color : purple;">Choose your problem to unplug 👇</h1>
+	</font>
+
+  
+	<div class = "ser" id = "our_services">
+	<section>
+  <div style = "overflow-x:auto">
+	<table style="width: 100%; height: auto;"class = "responsive" style = "background-color: #33475b" margin: 0;>
+	<tr>
+	<td> <img src="https://images.thequint.com/thequint%2F2023-01%2F3b080752-7789-458b-a101-756f2a8ca860%2Fhero_image__1_.jpg?auto=format%2Ccompress&fmt=webp&width=720" height = "350" width = "490" alt = "responsive"></td>
+	<td>  <img src="https://duffy.agency/wp-content/uploads/2019/06/DiGiulio-2017-%E2%80%93-Physical-representation-of-information-overload-overwhelming-online-users.png" height = "350" width = "490" alt = "responsive"></td>
+	<td> <img src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2017/10/onlineharassment-1507116585.jpg" height = "350" width = "490" alt = "responsive"></td>
+	</tr>
+
+	<tr>
+	<td> <font align = "center" size = "3" face = "sans-serif">
+
+		<h1><a href = "Social.html" style = "color : purple;">Social Media Pressure</a><h1>
+	</font></td>
+	<td><font align = "center" size = "3" face = "sans-serif">
+
+		<h1><a href = "information overload.html" style = "color : purple;">Information Overload</a><h1>
+	</font></td>
+	<td><font align = "center" size = "3" face = "sans-serif">
+
+		<h1 color = "black"><a href = "Harassment.html" style = "color : purple;">Harrasment</a><h1>
+	</font></td>
+	</tr>
+	</table>
+  </div>
+
+</section>
+</div>
+
+
+<br><br>
+<div class="image-container" id = about>
+  <img src="https://www.foundationforpositivementalhealth.com/wp-content/uploads/2015/12/slide1.jpg"  class="responsive" style="opacity: 0.5;  width: 100%;
+  height: auto;" style = "position:absolute; top:0; left:0; width:100%; height : auto; padding-top:13.5%; text-align:center; font-weight:bold; font-size:5vw; color:white; font-family:arial;" >
+  <div class="text-overlay">
+    <h1 style = "font-family : Ink Free; font-size : 40px;"><i><strong>About Us</strong></i></h1>
+  <p style= "font-family : cursive; font-size:25px;">We are ok, a Pune-based company dedicated to mental health and digital well- being. Our mission is to address the challenges posed by information overload, online harassment, and digital pressure.
+
+<br><br>With a team of experts in the field, we provide innovative solutions and strategies
+
+to help individuals and organizations navigate the digital world while maintaining
+
+their mental well-being. Through our services, we aim to create a healthier and
+
+more balanced digital environment for everyone.</p>
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+<div id = "contact">
+
+  <footer class="footer">
+    
+  	 <div class="container">
+  	 	<div class="row">
+        <div class="footer-col">
+          <img src="https://img.freepik.com/free-vector/gradient-mental-health-logo_23-2148820803.jpg?w=2000" alt="Avatar" width="180" height="130" style="border-radius: 50%;">
+        </div>
+  	 		<div class="footer-col">
+          
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 				
+  	 			</ul>
+  	 		</div>
+				
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="FAQ.html">FAQ</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="https://www.facebook.com/groups/1398991893988336"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="https://twitter.com/digitalrefresh1"><i class="fab fa-twitter"></i></a>
+  	 				<a href="https://www.instagram.com/digitalrrfresh/"><i class="fab fa-instagram"></i></a>
+  	 			</div>
+  	 		</div>
+         <div class="footer-col">
+          
+          <h4>Contact Us</h4>
+          <ul>
+            <li><a href="#">9876543212</a></li>
+            <li><a href="#">support@mentalgmail.com</a></li>
+          </ul>
+        </div>
+       
+  	 	</div>
+  	 </div>
+  </footer>
+</div>
+</body>
+</html>

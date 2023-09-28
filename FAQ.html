@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FAQ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+<style>
+  
+  
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #24262b;
+  color: #fff;
+}
+
+.nav-links a {
+  color: #fff;
+}
+
+/* LOGO */
+.logo {
+  font-size: 32px;
+  font-family: cursive;
+  border-radius: 50%;
+}
+
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li:hover {
+  background-color: #4c9e9e;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.services {
+  position: relative; 
+}
+
+.dropdown {
+  background-color: rgb(1, 139, 139);
+  padding: 1em 0;
+  position: absolute; 
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: #4c9e9e;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.footer{
+	background-color: #24262b;
+    padding: 40px 0;
+}
+.footer-col{
+   width: 20%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+.container {
+  position: relative;
+}
+
+/* Bottom right text */
+.image-container {
+            position: relative;
+            max-width: 100%;
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            transform: translate(-20%, -50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #ffffff;
+            padding: 50px;
+            font-size: 10px;
+            text-align: center;
+           
+            
+        }
+/* Apply basic table styles */
+
+
+
+
+</style>
+<body >
+    <nav class="navbar">
+        <!-- LOGO -->
+
+        
+        <div class="logo">
+            <img src="https://img.freepik.com/free-vector/gradient-mental-health-logo_23-2148820803.jpg?w=2000" alt="Avatar" width="100.5" height="80.5" style="border-radius: 50%;">                  
+
+        </div>
+
+        <div class="heading"><h4 style="color:aquamarine; font-family: Lucida Calligraphy; font-size: 50px; ">Digital Refresh</h4></div>
+    
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+    
+         
+    
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+    
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+    
+            
+            <li><a href="#contact">Contact</a></li>
+          </div>
+        </ul>
+      </nav>
+
+     
+<!-------------------------------------------------------------------------->
+
+
+<h2>
+<p>
+    <strong>1. How can I recognize signs of a mental health problem in myself or others?</strong>
+    <br>-->Look for changes in behavior, mood swings, withdrawal from social activities, changes in sleep patterns, and physical symptoms like headaches or stomachaches.<br>
+    <br>
+    <strong>2. Where can I find help for a mental health issue?</strong>
+    <br>-->You can seek help from mental health professionals such as therapists, counselors, psychologists, or psychiatrists. You can also contact crisis hotlines or helplines for immediate support.<br>
+    <br>
+    <strong>3. How can I support a friend or family member with a mental health condition?</strong>
+    <br>-->Offer a listening ear, avoid judgment, encourage them to seek professional help, and educate yourself about their condition.
+    <br>
+    <br>
+    <strong>4. Is therapy confidential?</strong>
+    <br>-->Yes, therapy is confidential, and therapists are bound by ethical guidelines to protect your privacy. However, there are exceptions if there is a risk of harm to yourself or others.
+    <br>
+    <br>
+    <strong>5. How long does therapy typically last?</strong>
+    <br>-->The duration of therapy varies depending on the individual and the specific issues being addressed. It can range from a few sessions to several months or more.
+    <br>
+    <br>
+    <strong>6. Can I use my insurance to cover therapy or mental health services?</strong>
+    <br>-->Many insurance plans offer coverage for mental health services. Check with your insurance provider to understand your coverage and any associated costs.
+    <br>
+    <br>
+    <strong>7. Are there online therapy options available?</strong>
+    <br>-->Yes, there are online therapy platforms and apps that offer therapy sessions with licensed professionals via video chat or messaging.
+    <br>
+    <br>
+    <strong>8. What self-help strategies can I use to improve my mental health?</strong>
+    <br>-->Self-help strategies include exercise, meditation, mindfulness, maintaining a healthy diet, getting enough sleep, and connecting with supportive friends and family.
+    <br>
+    <br>
+    <strong>9. How can I manage stress and anxiety in daily life?</strong>
+    <br>-->Stress management techniques include deep breathing exercises, progressive muscle relaxation, time management, and setting boundaries.
+    <br>
+    <br>
+    <strong>10. Are there support groups for people with specific mental health conditions?</strong>
+    <br>-->Yes, there are support groups both in-person and online for various mental health conditions. They provide a space to connect with others who share similar experiences.
+    <br>
+    <br>
+</p>
+
+</h2>
+
+
+
+<div id = "contact">
+
+  <footer class="footer">
+    
+  	 <div class="container">
+  	 	<div class="row">
+        <div class="footer-col">
+          <img src="https://img.freepik.com/free-vector/gradient-mental-health-logo_23-2148820803.jpg?w=2000" alt="Avatar" width="180" height="130" style="border-radius: 50%;">
+        </div>
+  	 		<div class="footer-col">
+          
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 			</ul>
+  	 		</div>
+				
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="https://www.facebook.com/groups/1398991893988336"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="https://www.instagram.com/digitalrrfresh/"><i class="fab fa-instagram"></i></a>
+  	 			</div>
+  	 		</div>
+         <div class="footer-col">
+          
+          <h4>Contact Us</h4>
+          <ul>
+            <li><a href="#">9876543212</a></li>
+            <li><a href="#">support@mentalgmail.com</a></li>
+          </ul>
+        </div>
+       
+  	 	</div>
+  	 </div>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Information Overload</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+<style>
+  .cent {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+  
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+  margin: 0;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #24262b;
+  color: #fff;
+}
+
+.nav-links a {
+  color: #fff;
+}
+
+/* LOGO */
+.logo {
+  font-size: 32px;
+  font-family: cursive;
+  border-radius: 50%;
+}
+
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li:hover {
+  background-color: #4c9e9e;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.services {
+  position: relative; 
+}
+
+.dropdown {
+  background-color: rgb(1, 139, 139);
+  padding: 1em 0;
+  position: absolute; 
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: #4c9e9e;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.footer{
+	background-color: #24262b;
+    padding: 40px 0;
+}
+.footer-col{
+   width: 20%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+/* Apply basic table styles */
+
+
+
+
+</style>
+<body >
+    <nav class="navbar">
+        <!-- LOGO -->
+
+        
+        <div class="logo">
+            <img src="https://img.freepik.com/free-vector/gradient-mental-health-logo_23-2148820803.jpg?w=2000" alt="Avatar" width="100.5" height="80.5" style="border-radius: 50%;">                  
+
+        </div>
+
+        <div class="heading"><h4 style="color:aquamarine; font-family: Lucida Calligraphy; font-size: 50px; ">Digital Refresh</h4></div>
+    
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+    
+         
+    
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+    
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About</a></li>
+    
+            
+            <li><a href="index.html">Contact</a></li>
+          </div>
+        </ul>
+      </nav>
+
+      <br><br>
+	<h1 style = "color : purple; text-align:center;"><u>Informaton Overload</u></h1>
+<br>
+
+<table align = "center" style = "background-color: #33475b">
+	<tr>
+	<td> <img src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2017/10/onlineharassment-1507116585.jpg" height = "350" width = "490"></td>
+	<td> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///8eIB0AAAAABQAABwCfn56jpKIbHRoZGxjR0dG9vr3Nzc3S0tIRFA/CwsIcHxt1dnUTFRGwsK+pqqm2t7bf39+XmJfq6upQUU8iJCAqLCkKDgdFRkQ3OTby8/Ly8vFcXVtpaWg6Ozkgv1bJAAADJElEQVR4nO2d0XKbMBREhUyNYhJiIMaxcZwm//+RdVJPC+XyVobR0Z5nP2hHe3VXIAvnhBBCCCGEEEIIIYQQQgghhBBCrMOh7brmuPYolqN89b7Pvd9TNW59nX3Tnx7XHssiNL7I7gT/sPZoFuCY/xGYZQVRYpdnA8JTufaA/jvnIhtJzHG16LMxhYdJvP6rMCtymFEnCm+1yFpuLmEqkbWittNJhDWN63k6iVmBahoPvphKDD1pFitLIqtp7GyJJKOaElkBzpaICnDJ1mLPNyoqwM2sqCSJM7VIkmjPYgJNoyetqMk2DdSuP9WmEVBGTbYWFeDiIgGjphrgQs2vRQW4uEg2wNX85QZl1FSbhnb9kZFs0+DXYgpNQ69t4kK7fgIKcARmAhxeogJcZNhG3fCNmkCAQxk12VpEnWScCXCkWUzAqKkGuBSahgJcXCTbNBKoRZRRE6jFKjwbEke7/veq+REx7U/j/0TDAHf88N7nMWMJHBi18r35g/i5B7jSqlMIIRxuCt/sKWZQX5x7Mf7XCMLv3Ee99iAWpd67N6OVgCje3GntMSzL88l9clfSL25zuH9aexCLcqvDHX4tdRfyYvrVD91jz235vzONK3NuLi0He4tNxMzuLf7uEK9Vs42Ymf0h6HFUZQkknbLZeeshBujhvimQdLPNC/2iCfxfFfDHam2Lgt49mQJJJ/jxF/bYM4ivQdAZRXsGUVEtSYviBYLaxMwqihdItyhoR4+PamlaFC+Q1CYaelTDW9ScwZDTBYJqUFEtdmyLgqKa2kTs2BbFCwS1CbsGQS9fbIF4i9KjGmlHP2NRvEC4RUlRraVHtYZ+Tqaln5MxLUqKauYMFhuOQHybsGsQ1Sam+mBRzRJItyheIOmcjF2DoKhmC0RZ1BAYQLd42QJBbWLGoniBHIua91uQotr1ZH1LFtQm3Bb/PeDP6RSyBJrf5QZZ1Ln39L6tDrPojfO4V5BevtzpcnANfnPMi6FFeQJHz9dID36HbP399oP+xPn32Zjy1fs+935/XHsky3Fou64B6xNCCCGEEEIIIYQQQgghhBBCiCX5BYzlRU8VdfcMAAAAAElFTkSuQmCC" height = "350" width = "490"></td>
+	<td>  <img src="data:image/jpeg;base64,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" height = "350" width = "490"></td>
+	</tr>
+
+	
+	</table>
+
+
+
+
+
+
+
+
+<br><p style = "font-size:22px">
+Information overload is a state of being overwhelmed by the amount of data presented for one’s attention or processing. The term is used to refer not only to situations involving too much data for a given decision but also the constant inundation of data from many sources that is characteristic of modern life.
+
+Information overload reduces our capacity to function effectively, which can lead to poor decisions in both work and life as well as the inability to make decisions, which is sometimes referred to as analysis paralysis. When the situation persists, burnout is a common result.
+
+Information overload is one of the major areas identified for reform by the humane tech movement, which seeks to realign technology with human needs rather than exploiting human vulnerabilities for profit, as has far too often been the case.
+
+On the individual level and in the workplace, the main tool for preventing information overload is intentionally limiting our exposure by being selective about the amount of data demanding our attention. Attention management strategies such as shutting off notifications and simply limiting time at the computer can be very effective. Technological solutions include calm technology principles applied to software design and the offloading of information processing to increasingly capable AI systems.
+</p><br><br>
+
+<p style = "font-size:22px">
+
+The futurist Alvin Toffler wrote about the potential for information overload in 1970, and may have coined the term. Toffler foresaw the exponential growth of the information age and warned about the challenges it could pose for humans in Future Shock and other works.
+</p>
+<br><br>
+<img class = "cent" src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2017/10/onlineharassment-1507116585.jpg" height = "350" width = "490">
+<br>
+<h3 style = "color : purple;"><u>Overcoming Informaton Overload - </u></h3>
+
+<p style = "font-size:22px">
+
+As a writer for the web, I’m well acquainted with information overload. One bit of information leads to five facts, which leads to three articles, which leads to an interesting interview you must listen to right now, which leads to 10 pages in your browser.
+
+I’ve always loved the scavenger hunt research requires. Every clue leads to another. Every clue uncovered is a prize in itself: learning something new and interesting and getting one step closer to the carrot (such as the answer to your original question).
+</p>
+<p  style = "font-size:22px">
+
+But there’s always one more thing to look up, learn and digest.
+Whether your livelihood lives online — like mine — or not, you probably use the Web quite a bit. The Internet makes research a breeze. Want to know what triggered the World Wars or how the states got their shapes? Want to know how to bake a tasty tilapia or buy a reliable used car?
+
+Information is merely a click — or, more accurately, a Google search — away. Depending on your query, there’s likely at least a dozen, if not hundreds, of blogs on the topic, a similar number of books and many more articles.
+Alvin Toffler actually coined the term in 1970 in his book Future Shock. As more and more people started using the Web, “information overload” became a popular phrase to describe how we felt about going online, Palladino said.
+
+According to neuroscientists, the more accurate term is “cognitive overload,” she said. That’s “because the brain can process vast amounts of information depending on the form in which it’s presented,” she said.
+<br>
+For instance, taking a walk exposes us to a slew of complex data, but as Palladino said, our brains are able to process this information, and our nervous system gets soothed. Contrast that with standing on the corner of Times Square in New York City. Our brain struggles to organize all the sensory data barreling its way, and our nervous system becomes overstimulated, she said. (If you’re a highly sensitive person, like I am, overstimulated is an understatement.)
+
+Information or cognitive overload can lead to indecisiveness, bad decisions and stress, Palladino said. Indecisiveness or analysis paralysis occurs when you’re “overwhelmed by too many choices, your brain mildly freezes and by default, [and] you passively wait and see.” Or you make a hasty decision because vital facts get wedged between trivial ones, and you consider credible and non-credible sources equally, she said.
+
+When you can’t tolerate the overwhelm any longer, you just go for it (and likely go with the wrong choice), she said. “When overload is chronic, you live in a state of unresolved stress and anxiety that you can’t meet ongoing demands to process more information,” she said.
+</p>
+
+<br><br>
+
+
+
+<img class = "cent" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIGWBOvpZPHP8-G3qygUulTJkEGNo4bQo7Tg&usqp=CAU" height = "350" width = "590">
+
+<br>
+<h3 style = "color : purple;"><u>Overcoming Information or Cognitive Overload </u></h3>
+<p style = "font-size:22px">
+
+As a writer for the web, I’m well acquainted with information overload. One bit of information leads to five facts, which leads to three articles, which leads to an interesting interview you must listen to right now, which leads to 10 pages in your browser.
+
+I’ve always loved the scavenger hunt research requires. Every clue leads to another. Every clue uncovered is a prize in itself: learning something new and interesting and getting one step closer to the carrot (such as the answer to your original question).
+
+But there’s always one more thing to look up, learn and digest.
+
+
+Whether your livelihood lives online — like mine — or not, you probably use the Web quite a bit. The Internet makes research a breeze. Want to know what triggered the World Wars or how the states got their shapes? Want to know how to bake a tasty tilapia or buy a reliable used car?
+
+Information is merely a click — or, more accurately, a Google search — away. Depending on your query, there’s likely at least a dozen, if not hundreds, of blogs on the topic, a similar number of books and many more articles.
+<br>
+</p>
+<br>
+<img class = "cent" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnvGaH15n1HhYdxh2JjbzkgffhLxxuwXyuBA&usqp=CAU" height = "350" width = "490">
+<br>
+<p  style = "font-size:22px">
+This is a good thing, but it also can overburden our brains.
+
+According to Lucy Jo Palladino, Ph.D, a psychologist and author of Find Your Focus Zone: An Effective New Plan to Defeat Distraction and Overload, “Information overload occurs when a person is exposed to more information than the brain can process at one time.”
+
+Alvin Toffler actually coined the term in 1970 in his book Future Shock. As more and more people started using the Web, “information overload” became a popular phrase to describe how we felt about going online, Palladino said.
+
+According to neuroscientists, the more accurate term is “cognitive overload,” she said. That’s “because the brain can process vast amounts of information depending on the form in which it’s presented,” she said.
+
+For instance, taking a walk exposes us to a slew of complex data, but as Palladino said, our brains are able to process this information, and our nervous system gets soothed. Contrast that with standing on the corner of Times Square in New York City. Our brain struggles to organize all the sensory data barreling its way, and our nervous system becomes overstimulated, she said. (If you’re a highly sensitive person, like I am, overstimulated is an understatement.)
+<br><br>
+
+Information or cognitive overload can lead to indecisiveness, bad decisions and stress, Palladino said. Indecisiveness or analysis paralysis occurs when you’re “overwhelmed by too many choices, your brain mildly freezes and by default, [and] you passively wait and see.” Or you make a hasty decision because vital facts get wedged between trivial ones, and you consider credible and non-credible sources equally, she said.
+
+When you can’t tolerate the overwhelm any longer, you just go for it (and likely go with the wrong choice), she said. “When overload is chronic, you live in a state of unresolved stress and anxiety that you can’t meet ongoing demands to process more information,” she said.
+Overcoming Information or Cognitive Overload
+In Find Your Focus Zone, Palladino suggests readers view incoming information as bringing bags of groceries into your home. “To put them away, you need time, an amount that’s limited to what fits on the counter, and an already clean fridge and organized pantry.” These are her tips:
+
+<br><br>1. Schedule breaks. Take a break away from the computer. This gives your brain a breather, and helps you regain perspective, she said. Plus, the quiet time can help you zero in on making a good decision.
+
+<br>2. Set limits. Because the Internet is available 24/7, you can consume information for hours. Limit how long you scan for information. Filter your sources, focusing only on the high-quality ones, she said.
+
+<br>3. Keep your virtual and physical spaces clutter-free. Make sure your computer files and desk are “clear, well-organized and ready to handle overflow,” she said.
+<br>
+<br>
+</p>
+<img class = "cent" src="data:image/jpeg;base64,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" height = "350" width = "890">
+
+<br>
+<h3 style = " text-align:center; color:blue;"><u>For further assistance consult our doctors on - 1234567890 </u></h3>
+
+ <br><br><br><br><br><br>
+
+
+
+     
+
+
+<div id = "contact">
+
+  <footer class="footer">
+    
+  	 <div class="container">
+  	 	<div class="row">
+        <div class="footer-col">
+          <img src="https://img.freepik.com/free-vector/gradient-mental-health-logo_23-2148820803.jpg?w=2000" alt="Avatar" width="180" height="130">
+        </div>
+
+
+  	 		<div class="footer-col">
+          
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 			</ul>
+  	 		</div>
+
+
+				
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="FAQ.html">FAQ</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="https://www.facebook.com/groups/1398991893988336"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="https://twitter.com/digitalrefresh1"><i class="fab fa-twitter"></i></a>
+  	 				<a href="https://www.instagram.com/digitalrrfresh/"><i class="fab fa-instagram"></i></a>
+  	 			</div>
+  	 		</div>
+         <div class="footer-col">
+          
+          <h4>Contact Us</h4>
+          <ul>
+            <li><a href="#">9876543212</a></li>
+            <li><a href="#">support@mentalgmail.com</a></li>
+          </ul>
+        </div>
+       
+  	 	</div>
+  	 </div>
+  </footer>
+</div>
+</body>
+</html>

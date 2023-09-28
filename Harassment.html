@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Harrasment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+<style>
+  .cent {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+  
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+  margin: 0;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #24262b;
+  color: #fff;
+}
+
+.nav-links a {
+  color: #fff;
+}
+
+/* LOGO */
+.logo {
+  font-size: 32px;
+  font-family: cursive;
+  border-radius: 50%;
+}
+
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li:hover {
+  background-color: #4c9e9e;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.services {
+  position: relative; 
+}
+
+.dropdown {
+  background-color: rgb(1, 139, 139);
+  padding: 1em 0;
+  position: absolute; 
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: #4c9e9e;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.footer{
+	background-color: #24262b;
+    padding: 40px 0;
+}
+.footer-col{
+   width: 20%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+/* Apply basic table styles */
+
+
+
+
+</style>
+<body >
+    <nav class="navbar">
+        <!-- LOGO -->
+
+        
+        <div class="logo">
+            <img src="https://img.freepik.com/free-vector/gradient-mental-health-logo_23-2148820803.jpg?w=2000" alt="Avatar" width="100.5" height="80.5" style="border-radius: 50%;">                  
+
+        </div>
+
+        <div class="heading"><h4 style="color:aquamarine; font-family: Lucida Calligraphy; font-size: 50px; ">Digital Refresh</h4></div>
+    
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+    
+         
+    
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+    
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About</a></li>
+    
+           
+            <li><a href="index.html">Contact</a></li>
+          </div>
+        </ul>
+      </nav>
+
+      <br><br>
+	<h1 style = "color : purple; text-align:center;"><u>Online Harassment</u></h1>
+<br>
+<table align = "center" style = "background-color: #33475b">
+	<tr>
+	<td> <img src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2017/10/onlineharassment-1507116585.jpg" height = "350" width = "490"></td>
+	<td> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///8eIB0AAAAABQAABwCfn56jpKIbHRoZGxjR0dG9vr3Nzc3S0tIRFA/CwsIcHxt1dnUTFRGwsK+pqqm2t7bf39+XmJfq6upQUU8iJCAqLCkKDgdFRkQ3OTby8/Ly8vFcXVtpaWg6Ozkgv1bJAAADJElEQVR4nO2d0XKbMBREhUyNYhJiIMaxcZwm//+RdVJPC+XyVobR0Z5nP2hHe3VXIAvnhBBCCCGEEEIIIYQQQgghhBBCrMOh7brmuPYolqN89b7Pvd9TNW59nX3Tnx7XHssiNL7I7gT/sPZoFuCY/xGYZQVRYpdnA8JTufaA/jvnIhtJzHG16LMxhYdJvP6rMCtymFEnCm+1yFpuLmEqkbWittNJhDWN63k6iVmBahoPvphKDD1pFitLIqtp7GyJJKOaElkBzpaICnDJ1mLPNyoqwM2sqCSJM7VIkmjPYgJNoyetqMk2DdSuP9WmEVBGTbYWFeDiIgGjphrgQs2vRQW4uEg2wNX85QZl1FSbhnb9kZFs0+DXYgpNQ69t4kK7fgIKcARmAhxeogJcZNhG3fCNmkCAQxk12VpEnWScCXCkWUzAqKkGuBSahgJcXCTbNBKoRZRRE6jFKjwbEke7/veq+REx7U/j/0TDAHf88N7nMWMJHBi18r35g/i5B7jSqlMIIRxuCt/sKWZQX5x7Mf7XCMLv3Ee99iAWpd67N6OVgCje3GntMSzL88l9clfSL25zuH9aexCLcqvDHX4tdRfyYvrVD91jz235vzONK3NuLi0He4tNxMzuLf7uEK9Vs42Ymf0h6HFUZQkknbLZeeshBujhvimQdLPNC/2iCfxfFfDHam2Lgt49mQJJJ/jxF/bYM4ivQdAZRXsGUVEtSYviBYLaxMwqihdItyhoR4+PamlaFC+Q1CYaelTDW9ScwZDTBYJqUFEtdmyLgqKa2kTs2BbFCwS1CbsGQS9fbIF4i9KjGmlHP2NRvEC4RUlRraVHtYZ+Tqaln5MxLUqKauYMFhuOQHybsGsQ1Sam+mBRzRJItyheIOmcjF2DoKhmC0RZ1BAYQLd42QJBbWLGoniBHIua91uQotr1ZH1LFtQm3Bb/PeDP6RSyBJrf5QZZ1Ln39L6tDrPojfO4V5BevtzpcnANfnPMi6FFeQJHz9dID36HbP399oP+xPn32Zjy1fs+935/XHsky3Fou64B6xNCCCGEEEIIIYQQQgghhBBCiCX5BYzlRU8VdfcMAAAAAElFTkSuQmCC" height = "350" width = "490"></td>
+	<td>  <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYVFRgVFRUYGBgaGRkaGBoaGRgaGBgYGBgaGRoYGBkcIS4lHB4rIRgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHhISHjYrJSs2NDQxNDQ0NDQxNDQ0NDQ0NDQ0MTQ0NDQ0NDY0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAK0BIwMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAADBAIFAAEGB//EADsQAAIBAgQEAwcDAwMDBQAAAAECAAMRBBIhMQVBUWEicYEGMkKRobHBE1LRguHwFWJyFJKyIzM0wvH/xAAZAQACAwEAAAAAAAAAAAAAAAACBAABAwX/xAAmEQACAgICAgICAgMAAAAAAAAAAQIRAyESMUFRBGEiMhNxgdHw/9oADAMBAAIRAxEAPwDslEKomKsIqyg0jQEmBNgSYEEs0BJATYE2BIWYBMAkgslaQoiRMtJWm7QiELTdpK03llWQgBJhZsLCZCOn3gSkkWkAZJHIYwtMAa3P+dIriMUENmIAO3X1ExfyFF0w1C+iRQyBhGqXOn9pAOD/AJzhxzxbpEeN9kCJq0MlucgXB0E1/l3VGfAERNEQjKJBtJopAOJAiaIg2xibBi3/ABVn9LqDInFL+1/+x/yJfJFcWEIgdz2H1M3425FB1Ns3oBcDzJ9IUJYWEu7BqgJWRIhiJBlhANASJAiHKyBWQqgLCCcRgrBsJaZTQswgXEaZZHILayyhF1i1RY66wFRZARLLMhssyEQ7NRJqJgWEURSx8wCSAmASYWVZDQEkBNgSQEohlplpICYBIQ1aZaStNgSWQhaTSGVVG+p+k2SBtBlIiIZRe9tJga+vLpCLfmIMGx1Hl0i076CQOpWb4QP87RetRDghjcEftH35Q9ZTuSL8uwmZdB0gOCl+waddFLQpDDt+nnZlOqhjcgE2IB7G3oYVa6gsGPOxvzB2I7xb2oQqi1QPcOvYfxOA4v7Uhibo19tWsPpF0pKbSQyknG2z0h8LdQQ7nlfN8jKL2r4w2HorkJDnQWtcttudgJ5zgva2vSYlTmBN7dLdItxn2mq12JdcoJuNDptf6iM8Ztgfiiyq18U93q4t16qHe4v/AFACXXs/jc6GlWd3YsFRmdjZSbMdTva9vOeeniDE3JJPeXGBx90JOpDC/wDn+bzSSkkBHjJ6PYOEKoQohBVSVXW9gOXpHwJwvs9iqbJ/8d3ILeIcze4F76by3wfFq2UgUc4RmUktqLHQE8zaFHK4oCWNNnQzMsqaPGgWCPTam52DbHyOx9Ly0o1bgE+vaaxzWZvDRtlkGSHf6SFvtNFPVozcNi5EjDMJHJDcqM1EEy6QDLGGE0FEKIEuxYp1gahvGHEE6wgGKOsCyxtlgHWFZQrlmQtpqQh16iTUTAIRRFB8wCSAmwJICUWYBNgTYEkBICRAmwJICStIUQtN2krTdpCEbSSLrJhBaSAgSmiGnNgZBdQJMreDq0D8PyO0Xm5dpBKuiNUjY2EGr3GkSxFSoLg0c3kwsfzOP9pxiFRnFQ0wfeVSQLcrX56xd5XfFrsYhjtdlr7ScbCq1KkoZj4Wa4Krf4R1bty5zgjwVWOap4j+0aKPlvE8Jj/0/cRnc/G1wqjog+5l7hcSXFyLHmIVOOzeKVUgNLCoosqKPIATVXDKd1HyhcaXA8AF+8rUOJPxIext+JV35NUq8CHFOAowJQWbtzlPg6GQlXuL8us7FXdbGolh1U3X10uJU8doBtQO5PWa48j/AFkzOeJN8ooqxxF6bWQlbbja/fadx7H+1aNnSt4WYg5vhNlA16bTzbEVmFrHQjUGxAI0Nr7dfWDTEOfiP4+UZSfYpJq6PacXxLD5GRnXLpl1uRryPK0a4PxEVQMrXIJBPKw2PczyDC4oKDmW7EEAk6DvadLwTiOHVQrFy97lgPkBc7TKmpWE0uNHqTjTw6HvsfOLNihYixDdNwfIykw/F+V2fp4WHzLGw+cfo4kvutumvh+m5+kuUvC0VFeywpuG9PlJssFRplAMuq81536g/g/SZVxB2VGJ8iFHck2+k2jPVMylH0aU3F+REGRCIgCgA3sLfLrNsk3jJC8oMXYQTLGbayNVgdpOf5JFcPxbEnWAdY24gHWapmTQtlmobLNS7BOsAhFExRJgRQ6BrLJATYEkBJYLMAmwJsCSAlWQjaSAmws2BJZRECZaTtN2kshgblFamIFMgMfCx8JO3/EnrGgJt6IZbMAQeRmWSLa/HstNJ76Iqw63EBieIImhOvJQCWPkBB/6Ug2zAdAzAfSETDU01Cgd+fqTvMHPLXSQVRvyytq1q1TUXpr0Au58yfCvkL+c8/8AarHhKmWo7EjZWbMbnW4UaA2noWO4tSQ2LqxsTlGp9QNvWeZ8boB3eqWtmNzYbDkBfYReKblcnY3jutKhfD1FrA2uova5BBJ7A/fvHqNAILKb997mUeGWoat10pqoAvuzXBv9/nLKjhayPdWFSk3vIx8Snqp5+Rhy06sYjtWZxbFMF0HnrKvD4usToqEdM3i+ot9ZeYlwACw0JtryPK8xMKh1yD5QYuKj0aOLbB4HHZvCylTzVh9jsfSJcRo5bgbbr27S2NIAWtEsaLi0G96Lo4biCBXPS8CqxjjLeNh0MQovbedKO4o5mRpTaLBQAPKZW4hmsEQLYctST1MxGUjeQbC3+LToP7yk15I0/BecE4llIDsSvnz/ADOooe1SEjOSijYAE697azzxEycm9f4j+HGZczEg7g2+Xn/f5hKNhJ+z0/De1+HsMztfb3SftrHE9oqLe64P0PyM8mDuNc2Yedx6jlGadRgbm1+o0P8AEC3Hph8E+z1JeJqx8Ns3mPEOhjlFs4vm0PSefYTjLWC1Ddb6NpmB7HrLvC8RqXyItr/EwOl/it0grLJOmU8SqzpiNCO+8CrrqAQTIUKDqvjIcDcC4P1976SQwq72BvsbW05eU3xt3VbF8iVd6NOsC4jrU9Pz+DFmWOQnaFJwpi2WZD/pdxMh2Z0dOBJATSiEAidjpgEmBMAkgJZRoCSAkgJsCQo0BN2kgJsCQojabtJWmrSEMCzD2/tNxbFV8o095tugtuT2Amc5KKtstJt0KcUx5pKTod7chf8AM4XintDiG0FMEAEnUqLdTOtq0gw/Ue5BNkXrfYn7gRXiOARUvUfIhINQ3t4R8N+5t6AzlylOUrfXqx3Hwivs4LAkrTDN77ku2/UhRrrYD7mA4lilAs22hbv0WP40ozXpElNMpO5HUyh4nhnaqpVboHDMTotlYaE+QE3iuUlYzGSUWN4aliKql0QheV/Dcf7b6n1jNTD4mkdUzjT3Wvvy1lPisNiarZlxBVegdwt+VlXTTT5QmDTG0mV0q/qKPeVndlbS3xXt/m81cE1dr+iKc4uuOi3SutUMhuGGjKdGU/5zm+HsRdW3U2Ppz9d4jxDDNUK1KaFKgtnBPhN9WObmL7aSzwdIhSW1JOvoAPxFpaibJq9B6jStxZ1j7iVmLOsCHYRxXGT4285Whh0+ssuIm7sR1lcznnb/ALV/AnXx/qjkZv2ZE1TJJUO28iFvHqODUpc221Nxp/B2h6MVyJ4YldXNgOV9TG2qK1jyOvQ+vf8AzvK45j3PPz6nvJUwRvsYEl6N4t+TreAYWi58Z8gTbzDfzLp+HU6bFSiPSb3WYXKMdkdhsp5NtyM4Ci/K8s8LVdDo7AEa8wR3B0I7RaUX7N4uzqF4JZ/dUI4NiLHLytcjSxlhgXZCUezWQqbg/uI1I5HS1x0lVwzFOgJUl0G6owFrj4VYHlyEZfiLPqi1G6goSGG3jy8x1EWbdmrXs7HD4tSArAq3LS4a3MEXvNHEryNzrYDW+u/acX/1dRgAiOgO5bMyi3NfDeWfCHZszA3cakgA5u7A627fKMwz8e0LTwX5OkDm2xEgwk6LEqLix201Gkkwv6fUR3FNSVoRyQcXTAZj1mTdpk3MDpxJibCyQSJ2OM0smJsLJBZaBMAkgJgE3LSKME2BMAkodFWatMyzYm5fFeSWBrBQpLWAGpM5+pWNV2JDZT4QAPhH8n7S/rU82h23P4iNJ1RXYjQFj5BTYW+U53y020ul/o2xNJN9sq+NcUSnbPcMPcX4idsxtsOXznmvtb7QPXYgmyiwCgnKLX1PU6mdJxnE5S1RvEzjQsPcB2t3toPUzg8dTNRrIhOnK523MXxNSlb6Ho40o/ZdcMa9GmR+37EiPjD+EA6cz6yq9mMQP0wCfcZlPqcw+jfSN8S4iM+m1pu6TYMU20NZRsth6CHQ2FpTUuKKDHU4ijbWmMr9DUUNWkwIBMQDJGuJkwkjKu0psW2tpYV62kp6lbVmsTbYDmYUEW2UXEcIVJPr6aylqeU6l+NINKisvmLj6Sq4pjqJW1MAk8wtgJ0cTn00J5446btf15KUNCZ4GbEYOemHpvYH0t9Yei5OhiYj+H8v/wAgSNINsssPQtZXGjC6tzhsNQBcIz5O7XKg+nKGw2GDiwY5l1XTccxDNTBFnWzDTzG0WlIchEuKXsnWK3T9NwdiHI+4hMJg8TTcoqOtS1/DUUZl6gNcMPKR4CQpyl2Q/C6sR/S4+xl/jMO7BXDlsjXB2dQdDqOW0XlNLQVO9iuFfEgMSG/abgEqT2AFj947gMQqgKVvbmPCw621I+sa4ViwXZahsxC2uLZtxfpeWj8NR91AP7hofnCjico8kzKWRJ00CpYkG37SQL8r259DqBJMeYi9TBuE/TGUhrgvtYXve3UfxGmXpG/iqST5IU+Q0+gNpkJaZG7FqOkUyamRySQEUsYZMGTEgBJqIaYJuSAkQJMCaIFmCbmWm4aRRqDYG++kLNGSStEBtoJX4ukDlp75jcjy1ueo0v6QmMxwXS1+t9B6SsqY42Z8uy762A/aOv8Aecr5ObHfHv8A7Yxixy7KH25wq6W3Nja+9rjbkJRVuEOmBeqFKu27WAOS+tjuL6+lp2BwiMoaqczuRe/JeagchaK+1uNH6Droq6KL7ttoo5CJ8t393Q5CTpQX+WeM08c1BiRqpFmXr0I7iOUsR+oM6m4vr1B6GV/GypfwiwjPs3T8Dt/uUfIG/wBxOo0nDl5AUmp8fAwU1jFLDk7GTdI7hEi85UhqKsW/RcbNMDVBvrLoUZEUJjz+jSitXO2lowaIRdeWsfWmBKT2rq5KJAaxbT05/TT1hY05yUUDOShFyZyHGMZ+q5t7o0HfvK8CbSaadZJJUjjzk5Pk/JgWSIkkHLrJslyQPT0ksijoEpj3Dz4ogYbDvYiDJWgoOmd9wnFKcudfF4SpUdDbWXpwKVX1XfcX18x3nE8Hx9mAOh3HQmdjheIk2uhJGxLARDLFodj7RmJ4E6eKmc6eVmXsZY8Kw4YEahre7tcdLde0NgOOeKzgL6E6fOPthEdxVpEf7sh/HI85hL2FyfTBthiTcOLi1geeoNuxuJcUXzLroRuIu+AR1DMuY8zsTbQkW7iToDICoDN00It2JMYw3Fp+GLZGpJ/QVxBsIUA895FhOgmJtAbTJK0yFZVHRgyQgVeEVompGrQQSQkAZIGaxkgSQkhIzYM1iwWSmTQkpomCZIkzZkbQZN+C0J0cMGLMwuTcC+wG2kDxEBVChb9F6kbfWPUTa46E/Im/5+kUxr7NYkr4rdgbH6XM5+WMFi12+/fZtFtyBMmVTVqWuAbdFXoJ5l7VcUWt4VSwzEgnc6WtO949WLgKCMul7HcnUD5TneJ8GBR/DlKgtc+WgH3iEpx5qvHn7HcEajcu2eQ8TqXJltwNbUB3Zj9bfiVeLoXJtqZccKFqKf1f+RnTk1/GkgEn/I2x0bR/DCVoMcwzRWa0NQLZZFoJX0hQNL89/wC3eYJWat0TVdLnacL7bYnNUReQUm3dja/0PznZ1HvPPfaapeuewUfc/mN/EX5ivyn+BTqYSouv+c4Myea9vlOic1emTVtjJN15GBV4RHt5dILQcWmTRRuRf8jrMJF9IQLpp/lxb/PKDUXF+lpQdUMliCCO07r2b4rTdQlXKGGlzoGB69+84Sk3I+h6RzADxWIv9tZjkjaN4bZ67QwKVFtptow5EHRvpA4Oo9NrBNRcErsbcyJzXs/xJ8M9spZCDdTvYHdZ3GG4vhzZlZbbtflc217xGUN2matuOmrJYLGstw6nKbsrDWwOtj63lnRqBwGF7HqLROjiKT+FGtqdLEfcR5KYAsCfWMYW1rwLZKf9mNBMIZoJo3YvQO03MmSWVxHFrGGWtEw0IrTn8mMuKHVrQq1YkrQitCUmA4odV5MVImrwqvNI5GA4jIeSDxYNJhprHMwHEKWms+8jeBxbWVtbaS55ai2RK3RFq43Azb+VopjqrgXVACeZI6Xt8oZ8SqqNdrDSJcXxy5GAble52FtZzsmROLt7+vZvji+S0VGBS4qHMAQcoB5eFdRF/aziATCuqtd3FtNWZjpYASq4cj1rlmyIXNypAZjbbXYW5zWIalQ1QZ6wbRmJYDyvpFscWpdD0oq7bPLcQWVirXDAEEc7jcS74X/7KeR/8jFOM0w1Vr+KozFmA2F/3H+I7hUyIq9AJ1pO4IxX7MOrRrDtEHMPQeYTVoYgWhfSRR4s1TSbpvMeOjVsbdtJy3GeGGr4l94X8iOhnSs2kAKcPHNwdoGcFNcWed1sOyaMpH29DAhp6Fi8OMpJHKMY7htFlRHpBiFGtmBGnJl1vpt3j8PkKS2jm5fjcXpnmsks7DEeyFM+5UdT0ZQ4+YsYhX9kqqqWV0dh8AuGI6jNv5TZSizHhJFKj+G3TWbRpBkZGKspVhuCLEehk1a4tbylMOOwto6rgEAft37wWGp3Ivp/E6Sv7Oo9MujqGFiFLXuBv5GYTnFNJjMIurQnhcdUOzXI153vt6GdVwSgnieuSHNgo1uBzPbz3nI4Zcls9J79RfWXGEu3jWkxt+/3fUc/WLZK8GyTaO2w+Ba91c+LVSw0bnYm+hlvg8S/uvcMLXv0PMHnOc4VxNkpkPfKG02st9gCO0cw3tArvbUDQ3O3WZwlT0Yyi3dnTEwbSjTjiE2DCE/1lBzEcUhZouLTcpf9XXqJkvkVRbI0MrRJGh0aJDI0rQitFVaEV5LBaGg0mrRQPCCpCTAcRsNJq0VV5NHhKQLiNAmLWDA5tb9eQ7Qi1JQ4/jGUlaZv/uI2/wCPXzknFyr0SMSzqVURCXIB7737Cc1xjGrVICrYDXXn6RarXLG7EknnzirvvAWKOr8G0VTsBWpXvqfTrOf45jf0gURi1Q7nTwD0+KWnFuI/pJcHxMcq9urek51eH5vHe99T5maqomsY8tsW4dhbAsdzGXjYp2EHWw5AvpJythVQuwuJGm1oektwYpVFjB70aLSsdDyavF6Z0hEGsFxLsdQwiwKyX6o5awONh2Y2rov+65/pBb8Q1atqTf0Hy+5A+cXwxOdnPwpoO7H+A0nlYta48IFz+T63PpGsUaQlnlcgqHYfW9teZ/EfSnlFwb9jqPmPOV9J0XU+9tqL633hHqK2oNvKaPRktmYvCpUFqqBvOxH9Lbgznsf7J/Fh2t/sc6ejfz850IcjfUdt/wC8LSFyLevb+Jam0VxPPa1NkOR1KsNwfuDsR3hMPicpGtwDsSfxO5x2FSsCjre3unmO6mcyODgOyHS1rHkQeYlSaq2bQbbotuH8XduROovpcgDkJ0NXEIy3VSCToo117zjH4e9FlKVFNz12336bS/4FjHqaMgCqCMwNr8r256xKeNSalHoYulss2Vwn6bICHN9D0t73IaSFCgMr52AzbBdhb4R2tfXrJ4nGEWXkB/l5X1a14zj+M2rYjk+SlpIQxyKb5TzFrXG25+/0lc5cfEZbO0We0dWNUJObK79er+4zUcsJkvgifyM9LSrGErSrRodDOUzpFitaEWrEEMKsEg+lSFVogkmHIl0UPAyQMUWoYVTJZVCHtBjsiimDqwu3/G9gPWc69XWS47WJr1OzZR5La0UY6/OavouKDrU+0DiKth1MjTP4/mQc/wDqKvLf5a2hJEbOe9oHzPk/YAP6jq31P0mYKrlUA7RbFm9Z7/vP3jTLlsd9x6SmrQx0kWCqLZjty/vF65v5RD/qGva/O39/OM59IDVBJWSwyeI94tjaesZpNqIPFG5lL9rCeo0DRbCTRrQWaQZoVFJDYcQdbFFRcCBSQxZsspK2RulYfh1dmUsfiqAeiLm/+8YSvYO29zbny0/mCRclOnb9lRumrFPxpNA+FO5F/WMxVCM3bGlq3cabC/4EE1RSek2jeN/QfSLk7+Up9kQ2lU7g+V4yuIyrf4m+0plPhHcxs1CWI6bfKDIOOx7PY3i3GKBdAyGzr4l7jmv59JsN4Se/3m1a6KegH00kRHp2jnUr1KjBT4jsLgX/ALzs+C8NVkswN1QsdbG/p3nOV6KrUWwPisd7FSehk8DxyrSq/pAhgTa53t07wGrtJGkr07LrEoUOU72irtJ4usWYsdzFXaP47UUmcvI05No27QDtMZoF2mpkZnmQGaZLIf/Z" height = "350" width = "490"></td>
+	</tr>
+
+	
+	</table>
+
+
+
+
+
+
+
+
+<br><p style = "font-size:22px">
+If you are experiencing cyber harassment, stalking, or bullying, it can be difficult to know where to turn. You may be thinking: Am I actually experiencing online harassment? How do I report it? Can I sue someone or involve the police? Let’s go over what constitutes online harassment, and what to do if someone targets you on the web.
+
+Harassment is generally defined as a repeated pattern of behavior intended to scare, harm, anger, or shame a targeted individual. Online harassment means these actions occur using digital technologies such as social media platforms, email or messaging services, gaming platforms, or cell phone communication. Examples of such behavior include:
+
+<br>1.Posting defamatory remarks intended to harm a person’s reputation
+<br>2.Publishing private, explicit, or manipulated photos
+<br>3.Sending threatening messages
+<br>4.Posting false information or impersonating someone online</p><br><br>
+
+
+<br><br>
+<img class = "cent" src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2017/10/onlineharassment-1507116585.jpg" height = "350" width = "490">
+<br>
+<h3 style = "color : purple"><u>Harassment - </u></h3>
+
+
+<p  style = "font-size:22px">
+Online harassment, or cyber harassment, includes various forms of online abuse such as cyberbullying, cyberstalking, online impersonation, doxxing (also spelled “doxing”), swatting, revenge porn, sextortion, and more. Many of these acts are considered crimes punishable under federal and state laws, depending on the specific behavior and the harm caused to the victim.
+
+Examples of cyber harassment often take one of the following forms:
+
+Hate speech is a common form of cyber harassment that involves offensive and discriminatory language or actions motivated by animosity toward aspects of identity such as race, religion, gender identity, etc. While there is no legal definition of hate speech, it’s characterized by the use of slurs, name-calling, and other forms of verbal abuse and can also be conveyed through images and memes on social media.
+Cyberbullying is the intentional, repeated harm inflicted on a person or group through digital means, most commonly through social media platforms. Each state has its own laws regarding cyberbullying, including criminal and school sanctions.
+Cyberstalking is another common example of cyber-harassment that involves targeted and repeated intimidation, threats, and harassment directed toward one person. It can include false accusations, defamation, and digital vandalism. In many cases, it is a crime that’s punishable under federal and state laws.
+Online impersonation occurs when someone uses the identity of a person, organization, or brand without their consent and with the intention of damaging, intimidating, or defrauding others. Impersonation is very common in phishing schemes using fake social media accounts and can cause costly damage to a business.
+Doxxing (or Doxing) is the act of revealing someone’s personal information online with the intention of harassing them.
+
+<br><br>
+
+
+
+<img class = "cent" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQifx2J-Hy1jj9HHPxZW5nO-gDIlmExQUYdyA&usqp=CAU" height = "350" width = "590">
+<p style = "font-size:22px">
+ It is most common in the gaming and hacker communities but also affects celebrities, politicians, and journalists. Doxxing can range from a misdemeanor to a felony offense depending on the malicious intent and harm caused to the victim.
+Swatting is an extension of doxxing where a bad actor fabricates a dangerous story to law enforcement about the victim (i.e. “This person is holding someone hostage at their house). Law enforcement, in turn, shows up in force at the victim’s residence. It is a crime that can result in severe legal consequences for the perpetrator.
+Revenge Porn is the non-consensual sharing of sexually explicit images or videos of someone, usually by a former partner or spouse. It is a crime that is punishable under state laws and can lead to severe legal consequences for the perpetrator.
+Sextortion is when an individual uses sexually explicit images or videos to extort or blackmail a victim. It often includes threats to share and distribute the content to the victim’s friends, family, or employer if they don’t comply with the perpetrator’s demands. It is a serious cybercrime that is punishable under federal and state laws.
+
+ </p>
+</p>
+<br><br>
+
+<img class = "cent" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTcEolujP0GPt9_Zg4N8DJ1rr98VwqhECxUQ&usqp=CAU" height = "350" width = "490">
+
+<br><br>
+<h3 style = "color : purple"><u>What Can You Do If I Am Being Harassed Online? </u></h3>
+<p style = "font-size:22px">
+Identify, document, and report incidents of harassment. First things first: what specific actions are you considering to be harassment? Is it repeated and severe? This step is important when it comes to reporting online harassment; companies or courts will need to know exactly what behavior has occurred and its effect on you. Next, start keeping track of every instance of abuse.
+ </p>
+<p  style = "font-size:22px">
+
+Keep Yourself Safe
+If you are being threatened online, you should stay vigilant in protecting your physical safety as well. Ask yourself: are you acquainted with the perpetrator of your online abuse, or is their identity unknown? If their identity is unknown, you can take steps to unmask them, but you should be aware that this process is often costly and time-consuming. If you know the person harassing you, consider the following red-flag questions:
+
+Do they know personal details about you, such as where you live?
+Have they made threatening comments? Are their threats specific? A specific threat may mention a time, date, or place where violence will occur.
+Are their claims irrational or erratic? Do they have a history of violent behavior?
+
+
+
+
+<br>
+</p>
+<img class = "cent" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs7Me_SergGJ87fVz52fxX-mrvdDSQsDw42g&usqp=CAU" height = "350" width = "890">
+
+<br>
+<h3 style = " text-align:center; color:blue;"><u>For further assistance consult our doctors on - 1234567890 </u></h3>
+
+ <br><br><br><br><br><br>
+
+
+
+     
+
+
+<div id = "contact">
+
+  <footer class="footer">
+    
+  	 <div class="container">
+  	 	<div class="row">
+        <div class="footer-col">
+          <img src="https://img.freepik.com/free-vector/gradient-mental-health-logo_23-2148820803.jpg?w=2000" alt="Avatar" width="180" height="130">
+        </div>
+
+
+  	 		<div class="footer-col">
+          
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 			</ul>
+  	 		</div>
+
+
+				
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="FAQ.html">FAQ</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="https://www.facebook.com/groups/1398991893988336"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="https://twitter.com/digitalrefresh1"><i class="fab fa-twitter"></i></a>
+  	 				<a href="https://www.instagram.com/digitalrrfresh/"><i class="fab fa-instagram"></i></a>
+  	 			</div>
+  	 		</div>
+         <div class="footer-col">
+          
+          <h4>Contact Us</h4>
+          <ul>
+            <li><a href="#">9876543212</a></li>
+            <li><a href="#">support@mentalgmail.com</a></li>
+          </ul>
+        </div>
+       
+  	 	</div>
+  	 </div>
+  </footer>
+</div>
+</body>
+</html>
